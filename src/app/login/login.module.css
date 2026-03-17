@@ -1,0 +1,167 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at center, #1e1e1e 0%, #121212 100%);
+  padding: 1rem;
+}
+
+.glassCard {
+  background: rgba(30,30,30, 0.8);
+  backdrop-filter: blur(12px);
+  width: 100%;
+  max-width: 420px;
+  padding: 3rem;
+  border-radius: 28px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+  border: 1px solid #333333;
+  text-align: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.logoImg {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  border-radius: var(--radius-md);
+}
+
+.glassCard h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: #718096;
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  text-align: left;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.labelRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.forgotLink {
+  font-size: 0.75rem;
+  color: #00b050;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.forgotLink:hover {
+  text-decoration: underline;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0.5rem 0;
+}
+
+.divider::before, .divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #333;
+}
+
+.divider span {
+  font-size: 0.8rem;
+  color: #718096;
+  text-transform: uppercase;
+}
+
+.googleBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  border-radius: 12px;
+  background: white;
+  color: #1a202c;
+  font-weight: 600;
+  border: 1px solid #e2e8f0;
+  transition: all 0.2s ease;
+}
+
+.googleBtn:hover {
+  background: #f7fafc;
+  transform: translateY(-1px);
+}
+
+.inputGroup input {
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  background: white;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.inputGroup input:focus {
+  outline: none;
+  border-color: #00b050;
+  box-shadow: 0 0 0 3px rgba(0, 176, 80, 0.1);
+}
+
+.loginBtn {
+  margin-top: 1rem;
+  padding: 0.875rem;
+  border-radius: 12px;
+  background: #00b050;
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.loginBtn:hover {
+  background: #009040;
+  transform: translateY(-1px);
+}
+
+.loginBtn:disabled {
+  background: #a0aec0;
+  cursor: not-allowed;
+}
+
+.error {
+  background: #fff5f5;
+  color: #e53e3e;
+  padding: 0.75rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: 1px solid #feb2b2;
+}
+
+.footer {
+  margin-top: 2rem;
+  font-size: 0.75rem;
+  color: #a0aec0;
+}

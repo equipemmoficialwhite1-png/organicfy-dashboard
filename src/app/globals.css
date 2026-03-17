@@ -1,0 +1,56 @@
+:root {
+  --green-primary: #248f4e; /* Verde Organicfy */
+  --green-glow: rgba(36, 143, 78, 0.2);
+  --green-light: #e6f7ef;
+  --green-dark: #1a6336;
+  
+  --bg-color: #121212; /* Fundo Preto Premium */
+  --surface-color: #1e1e1e; /* Superfície Cinza Escuro */
+  --sidebar-color: #181818;
+  
+  --text-main: #ffffff;
+  --text-muted: #a0aec0;
+  
+  --border-color: #2d2d2d;
+  
+  --danger: #ff4d4f;
+  --danger-light: rgba(255, 77, 79, 0.1);
+  --warning: #faad14;
+  --warning-light: rgba(250, 173, 20, 0.1);
+  
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  
+  --shadow-sm: 0 4px 6px rgba(0,0,0,0.3);
+  --shadow-md: 0 10px 20px rgba(0,0,0,0.4);
+  --shadow-lg: 0 20px 40px rgba(0,0,0,0.5);
+  
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
