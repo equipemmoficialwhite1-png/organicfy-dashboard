@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <!-- Fundo verde arredondado igual ao logo da Organicfy -->
+  <rect width="500" height="500" rx="112" ry="112" fill="#3a9e4d"/>
+
+  <!-- Folha branca principal -->
+  <ellipse cx="268" cy="210" rx="130" ry="105"
+           fill="white" opacity="0.95"
+           transform="rotate(-40 268 210)"/>
+
+  <!-- Nervura central / caule diagonal -->
+  <line x1="145" y1="370" x2="355" y2="100"
+        stroke="#3a9e4d" stroke-width="18" stroke-linecap="round"/>
+
+  <!-- Nervuras laterais direita -->
+  <line x1="275" y1="155" x2="340" y2="135"
+        stroke="#3a9e4d" stroke-width="12" stroke-linecap="round"/>
+  <line x1="295" y1="195" x2="360" y2="185"
+        stroke="#3a9e4d" stroke-width="12" stroke-linecap="round"/>
+
+  <!-- Nervuras laterais esquerda -->
+  <line x1="235" y1="175" x2="175" y2="175"
+        stroke="#3a9e4d" stroke-width="12" stroke-linecap="round"/>
+  <line x1="255" y1="215" x2="195" y2="225"
+        stroke="#3a9e4d" stroke-width="12" stroke-linecap="round"/>
+
+  <!-- Extensão do caule abaixo da folha (linhas brancas semitransparentes) -->
+  <line x1="145" y1="370" x2="105" y2="420"
+        stroke="white" stroke-width="14" stroke-linecap="round" opacity="0.6"/>
+  <line x1="125" y1="390" x2="85" y2="400"
+        stroke="white" stroke-width="12" stroke-linecap="round" opacity="0.4"/>
+</svg>
