@@ -12,8 +12,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Organicfy | Dashboard Financeiro",
-  description: "Gerenciamento financeiro interno da Organicfy conectado ao ClickUp",
+  title: "Organicfy | Assessoria Estratégica para Crescimento Previsível",
+  description: "A Organicfy é uma assessoria estratégica focada em crescimento previsível e sustentável. Tráfego pago, conteúdo, funil de vendas e estratégia personalizada desde 2019.",
 };
 
 export default function RootLayout({ children }) {
