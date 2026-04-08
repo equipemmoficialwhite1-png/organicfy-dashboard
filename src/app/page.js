@@ -6,6 +6,99 @@ import styles from './landing.module.css';
 
 const WPP = 'https://wa.me/5537999545539';
 
+const schemaOrg = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://organicfyoficial.com.br/#organization",
+      "name": "Organicfy",
+      "alternateName": "Organicfy Oficial",
+      "url": "https://organicfyoficial.com.br",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://organicfyoficial.com.br/logo.jpg",
+        "width": 400,
+        "height": 400,
+      },
+      "description": "Assessoria estratégica de marketing digital focada em crescimento previsível e sustentável. Tráfego pago, conteúdo, funil de vendas e estratégia personalizada desde 2019.",
+      "foundingDate": "2019",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+55-37-99954-5539",
+        "contactType": "customer service",
+        "availableLanguage": "Portuguese",
+        "areaServed": "BR",
+      },
+      "sameAs": [
+        "https://instagram.com/organicfyoficial",
+        "https://wa.me/5537999545539",
+      ],
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://organicfyoficial.com.br/#localbusiness",
+      "name": "Organicfy",
+      "description": "Assessoria estratégica de marketing digital. Tráfego pago, conteúdo, funil de vendas e crescimento previsível desde 2019.",
+      "url": "https://organicfyoficial.com.br",
+      "telephone": "+55-37-99954-5539",
+      "priceRange": "$$",
+      "currenciesAccepted": "BRL",
+      "paymentAccepted": "PIX, Transferência Bancária",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Brasil",
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Serviços de Marketing Digital",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Tráfego Pago - Meta Ads e Google Ads" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Produção de Conteúdo Estratégico" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Gestão de Redes Sociais" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Estruturação de Funil de Vendas" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "CRM e Processo Comercial" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Estratégia de Marketing e Vendas" } },
+        ],
+      },
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://organicfyoficial.com.br/#website",
+      "url": "https://organicfyoficial.com.br",
+      "name": "Organicfy",
+      "description": "Assessoria estratégica de marketing digital para crescimento previsível e sustentável",
+      "publisher": { "@id": "https://organicfyoficial.com.br/#organization" },
+      "inLanguage": "pt-BR",
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "A Organicfy é só mais uma agência digital?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Não. Somos uma assessoria estratégica. Antes de qualquer anúncio ou post, diagnosticamos seu negócio e criamos um plano sob medida. Não vendemos pacotes prontos." },
+        },
+        {
+          "@type": "Question",
+          "name": "Quanto tempo leva para ver resultados?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Com estratégia bem estruturada, a maioria dos clientes começa a ver resultados entre 30 e 60 dias." },
+        },
+        {
+          "@type": "Question",
+          "name": "Quais serviços a Organicfy oferece?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Tráfego pago (Meta Ads e Google Ads), produção de conteúdo, social media, estratégia de marketing e vendas, estruturação de funil, CRM e processo comercial." },
+        },
+        {
+          "@type": "Question",
+          "name": "Como funciona o diagnóstico gratuito?",
+          "acceptedAnswer": { "@type": "Answer", "text": "É uma conversa estratégica onde analisamos seu negócio, identificamos gargalos e oportunidades, e mostramos um caminho claro de crescimento. Sem compromisso." },
+        },
+      ],
+    },
+  ],
+};
+
 export default function LandingPage() {
   const [formData, setFormData] = useState({
     nome: '', email: '', telefone: '', empresa: '', orcamento: '', descricao: '',
@@ -62,6 +155,12 @@ export default function LandingPage() {
 
   return (
     <div className={styles.container}>
+
+      {/* JSON-LD Schema.org */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaOrg) }}
+      />
 
       {/* WhatsApp Flutuante */}
       <a href={WPP} target="_blank" rel="noopener noreferrer" className={styles.wppFloat} aria-label="Falar no WhatsApp">
